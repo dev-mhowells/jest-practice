@@ -7,7 +7,7 @@ class Basket {
     }
     getTotalPrice() {
         if (this.items.length === 0) return 0
-        return this.items.map((item) => item.price).reduce((acc, val) => acc + val)
+        return this.items.map((item) => item.getPrice()).reduce((acc, val) => acc + val)
     }
 }
 
