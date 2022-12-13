@@ -6,6 +6,7 @@ class Thermostat {
     }
     up() {
         // increases temp by 1
+        this.temperature += 1
         // check if psm mode is on - max 25
         // max 32 if psm off
     }
