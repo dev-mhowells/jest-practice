@@ -12,6 +12,7 @@ class Thermostat {
     }
     down() {
         // decreases temp by 1
+        this.temperature -= 1
         // min temp of 10
     }
     getTemperature() {
