@@ -16,4 +16,12 @@ describe('Thermostat', () => {
         thermostat.down()
         expect(thermostat.getTemperature()).toEqual(19)
     })
+    it('sets max temp to 25', () => {
+        thermostat = new Thermostat()
+        thermostat.setPowerSavingMode(true)
+        for (let i = 0; i < 10; i++) {
+            thermostat.up()
+        }
+        expect(thermostat.getTemperature()).toEqual(25)
+    })
 })
