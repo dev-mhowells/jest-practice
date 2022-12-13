@@ -31,6 +31,7 @@ class Thermostat {
     }
     reset() {
         // sets temp to 20
+        this.temperature = 20
     }
     checkEnergyUsage() {
         // <18 low, <= 25 med, else high

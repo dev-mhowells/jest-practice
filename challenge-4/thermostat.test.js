@@ -33,4 +33,11 @@ describe('Thermostat', () => {
         }
         expect(thermostat.getTemperature()).toEqual(30)
     })
+    it('resets the temp to 20', () => {
+        thermostat = new Thermostat()
+        thermostat.up()
+        thermostat.up()
+        thermostat.reset()
+        expect(thermostat.getTemperature()).toEqual(20)
+    })
 })
